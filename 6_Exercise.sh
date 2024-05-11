@@ -8,10 +8,10 @@
 echo "Enter the name of file or directory"
 read DATA
 
-if [ -f $DATA ]
+if [ -f $DATA ] # The -f option will check if it is a file or not.
 then
     echo "This is a file"
-elif [ -d $DATA ]
+elif [ -d $DATA ] # The -d option will check if it is a directory or not.
 then
     echo "This is a directory"
 else
